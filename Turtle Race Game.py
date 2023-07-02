@@ -25,10 +25,10 @@ while is_race_on:
         if turtle.xcor()>230:
             winning=turtle.pencolor()
             if user_bet==winning:
-                print(f'Ai castigat,testoasa{winning} a fost mai rapida')
+                print(f'You won. Your turtle was {winning}')
                 is_race_on=False
             else:
-                print(f'Ai pierdut boss.Testoasa castigatoare este {winning}')
+                print(f'You lost. The winning turtle is {winning}')
                 is_race_on=False
         random_distance = random.randint(0, 10)
         turtle.forward(random_distance)
